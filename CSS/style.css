@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation styling */
+.Header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.Header li {
+  position: relative;
+}
+
+/* Logo/Icon space */
+.Header .logo {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.Header .logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Navigation links */
+.Header a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.Header a:hover {
+  color: #4dabf7;
+}
+
+/* Active link indicator */
+.Header li a:hover::after .active{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #4dabf7;
+}
+
+/* Button styling */
+.Header button {
+  background-color: #4dabf7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.Header button:hover {
+  background-color: #339af0;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px #c2e3ff
+  ;
+}
+
+.Header button a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.Header button a:hover {
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Header ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+  }
+  
+  .Header button {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+  }
+}
