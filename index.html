@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" href="img/Falcon_logo.png">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
+
+
+
 <body>
+
+<!--Navigation Bar-->
 <nav class="Header">
 <ul>
     <li class="logo">
@@ -14,76 +24,142 @@
     </li>
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="Courses.html">Courses</a></li>
-    <li><a href="About.html">about</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Careers</a></li>
     <li><a href="Contact.html">Contact</a></li>
     <button> <a href="Register.html">Register Now</a></button>
  </ul>
 </nav>
- <p>
-    this is the text
- </p>
 
-
- <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-col logo-col">
-        <img src="img/Untitled-1.png" alt="Axiom College Logo" class="footer-logo">
-        <h3>Explore. Learn. Achieve.</h3>
-        <p>We empower learners with quality education and practical experience—supporting your goals every step of the way.</p>
-      </div>
-  
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Welcome to Axiom College</a></li>
-          <li><a href="#">Meet Our Educators</a></li>
-          <li><a href="#">Our Thoughts from Parents</a></li>
-          <li><a href="#">Meet Us Online</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Courses</h3>
-        <ul>
-          <li><a href="#">Microsoft 365</a></li>
-          <li><a href="#">Information Technology</a></li>
-          <li><a href="#">Graphic Design</a></li>
-          <li><a href="#">Web Design & Development</a></li>
-          <li><a href="#">Computer Based Accounting</a></li>
-        </ul>
-      </div>
-      
-      
-  
-      <div class="footer-col">
-        <h3>Important Links</h3>
-        <ul>
-          <li><a href="#">Admissions</a></li>
-          <li><a href="#">Scholarships</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-col">
-        <h3>Contact Information</h3>
-        <p><strong>Email</strong> <br> <a href="mailto:info@axiomcollege.com">info@axiomcollege.com</a></p>
-        <p><strong>Phone</strong> <br> <a href="tel:+94714907110">+94 714 907 110</a> </p>
+<div class="hero-slider-container">
+  <!-- Slide 1 -->
+  <div class="slide active" data-slide-index="0">
+    <img src="img/Online-learning-activities.jpg" alt="Students studying in a modern library setting" />
+    <div class="overlay"></div>
+    <div class="slide-content active">
+      <h1 class="headline">Study Anywhere, Succeed Everywhere</h1>
+      <p class="subheadline">Flexible, career-focused online courses designed to fit your life. Learn at your pace, from anywhere, and unlock your future with confidence.</p>
+      <div class="cta-buttons">
+        <button class="cta-primary"><span>Explore Courses</span><i class="fas fa-arrow-right"></i></button>
+        <button class="cta-secondary"><span>Apply Now</span><i class="fas fa-graduation-cap"></i></button>
       </div>
     </div>
-  
-    <div class="footer-bottom">
-      <div class="social-icons">
-        <a href="#"><img src="img/fb-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="img/insta-icon.png" alt="Instagram"></a>
-        <a href="#"><img src="img/youtube-icon.png" alt="YouTube"></a>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide" data-slide-index="1">
+    <img src="img/Student-taking-online-class.jpg" alt="Diverse students collaborating on a project" />
+    <div class="overlay"></div>
+    <div class="slide-content">
+      <h1 class="headline">Learn From Industry Experts</h1>
+      <p class="subheadline">Our faculty brings real-world experience to every class. Connect with leaders who are shaping the future of their fields.</p>
+      <div class="cta-buttons">
+        <button class="cta-primary"><span>Meet Our Faculty</span><i class="fas fa-users"></i></button>
+        <button class="cta-secondary"><span>Join a Webinar</span><i class="fas fa-video"></i></button>
       </div>
-     <p>© 2025 Axiom College Sri Lanka | design & Developed by <a href="https://alphascreative.com/">Alphas Creative</a> | <a href="#">Privacy Policy</a></p>
     </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide" data-slide-index="2">
+    <img src="img/504387_shutterstock_16d76998306_487275.jpg" alt="Graduate celebrating their achievement" />
+    <div class="overlay"></div>
+    <div class="slide-content">
+      <h1 class="headline">Your Future Starts Today</h1>
+      <p class="subheadline">Join thousands of graduates who transformed their careers through our programs. 94% of our students find employment within 6 months of graduation.</p>
+      <div class="cta-buttons">
+        <button class="cta-primary"><span>View Success Stories</span><i class="fas fa-chart-line"></i></button>
+        <button class="cta-secondary"><span>Start Your Journey</span><i class="fas fa-rocket"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Controls -->
+  <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+  <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+
+  <!-- Dots -->
+  <div class="slider-dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+  </div>
+
+  <!-- Counter -->
+  <div class="slide-counter">
+    <span class="current">01</span><span class="separator">/</span><span class="total">03</span>
+  </div>
+</div>
+
+
+
+
+
+  <footer class="footer">
+              <div class="footer-top">
+                <div class="footer-col logo-col">
+                  <img src="img/Untitled-1.png" alt="Axiom College Logo" class="footer-logo">
+                  <h3>Explore. Learn. Achieve.</h3>
+                  <p>We empower learners with quality education and practical experience, supporting your goals every step of the way.</p>
+                </div>
+            
+                <div class="footer-col">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Welcome to Axiom College</a></li>
+                    <li><a href="#">Meet Our Educators</a></li>
+                    <li><a href="#">Our Thoughts from Parents</a></li>
+                    <li><a href="#">Meet Us Online</a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-col">
+                  <h3>Courses</h3>
+                  <ul>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Information Technology</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Web Design & Development</a></li>
+                    <li><a href="#">Computer Based Accounting</a></li>
+                  </ul>
+                </div>
+                
+                
+            
+                <div class="footer-col">
+                  <h3>Important Links</h3>
+                  <ul>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
+                </div>
+            
+                <div class="footer-col">
+                  <h3>Contact Information</h3>
+                  <p><strong>Email</strong> <br> <a href="mailto:info@axiomcollege.com">info@axiomcollege.com</a></p>
+                  <p><strong>Phone</strong> <br> <a href="tel:+94714907110">+94 714 907 110</a> </p>
+                </div>
+              </div>
+            
+              <div class="footer-bottom">
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                  <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+                  <a href="#" aria-label="YouTube"><i class="fa-brands fa-square-youtube"></i> YouTube</a>
+                  <a href="#" aria-label="LinkendIn"><i class="fa-brands fa-linkedin"></i> LinkendIn</a>
+                </div>
+
+                <p>© 2025 Axiom College Sri Lanka | Design & Developed by <a href="https://alphascreative.com/">Alphas Creative</a> | <a href="#">Privacy Policy</a></p>
+              
+              </div>
   </footer>
   
  
+<script src="Jsscript/script.js"></script>
 
 </body>
 
