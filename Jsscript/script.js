@@ -78,3 +78,39 @@ document.addEventListener('DOMContentLoaded', function () {
     initSlider();
   });
   
+  
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // Speed of the counter
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            const increment = target / speed;
+
+            if(count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateCount();
+                    observer.unobserve(entry.target); // Stop observing once the animation is done
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        observer.observe(counter);
+    });
+});
